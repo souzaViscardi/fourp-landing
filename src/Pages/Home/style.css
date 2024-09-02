@@ -5,19 +5,33 @@
     translate: none; 
     rotate: none; 
     scale: none; 
-    transform: translate3d(0px, 0px, 0px) scale(1.1474, 1.1474);
     width: 100%;
+    animation-direction: alternate-reverse;    
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
 }
+
 img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%
 }
 .imgContainer{
-    width: 125%;
+    width: 195%;
     height: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden
 }
+
+@keyframes anim {
+    from {
+      transform: scale(1) translateX(0);
+    }
+    to {
+      transform: scale(.7)
+    }
+  }

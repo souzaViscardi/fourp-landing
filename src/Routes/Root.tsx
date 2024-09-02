@@ -9,4 +9,14 @@ export const router = createBrowserRouter([
     element: <Home />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/trabalhos",
+    element: <ErrorPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/contato",
+    element: <ErrorPage />,
+    errorElement: <ErrorPage />,
+  },
 ]);
