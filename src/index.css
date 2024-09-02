@@ -21,7 +21,6 @@
   --fourp: #ff632d;
   --fourp2: #c400ff;
   background-color: #161616;
-
 }
 .full-container{
   display: flex;
@@ -82,15 +81,30 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+@media (max-width: 768px) {
+  #root {
+
+      max-width: 100vw;
+      padding: 0%;
+      font-size: .4rem;
+    }
+    li{
+      font-size: 1rem;
+    }
+    .title{
+      font-size: 4rem !important;
+    }
+    h1{
+      font-size: 1.5rem;
+
+    }
+  .full-container{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
 }
