@@ -2,7 +2,8 @@
 import  "./style.css"
 export default function Home(){
     return(
-        <div className="container">
+        <div id="home" className="container">
+        <span>BY PEOPLE, FOR PEOPLE</span>
         <h1 className="title">    
             <span>STUDIO</span><br/>
             <span>FOURP</span>

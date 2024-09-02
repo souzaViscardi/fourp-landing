@@ -14,7 +14,7 @@
   --paragraph: rgba(29, 29, 31, 0.7);
   --font_inter_tight: "Inter Tight", sans-serif;
   --font_instrument: "Instrument Sans", sans-serif;
-  max-width: none !important;
+  max-width: 100vw;
 }
 .container{
   display: flex;

@@ -1,25 +1,35 @@
-.title span {
-    color: white;
+.title span{
+    color: white !important;   
+}
+h1.title {
+    margin-bottom: 0;
+
+}
+#home span{
+    color: rgba(255, 255, 255, 0.7);
 }
 .scaleDown{
     translate: none; 
     rotate: none; 
     scale: none; 
-    width: 100%;
+    width: 195%;
     animation-direction: alternate-reverse;    
     animation-name: anim;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    overflow: hidden
 
 }
 
 img {
     flex-shrink: 0;
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
+    overflow: hidden
+
 }
 .imgContainer{
-    width: 195%;
+    width: 100vw;
     height: 20rem;
     display: flex;
     justify-content: center;
