@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 function App() {
   return (
-    <div className="container">
+    <div className="full-container">
       <NavBar/>
       <RouterProvider router={router} />
     </div>
