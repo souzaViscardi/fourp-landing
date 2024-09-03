@@ -1,17 +1,27 @@
 import "./style.css"
-export default function Card(){
+import { Link } from "react-router-dom";
+interface CardProps {
+    name:string,
+    url:string,
+    type:string,
+    img:string,
+    date:string
+}
+export default function Card({name, url, type, img, date}:CardProps){
     return(
+        <Link to={url}>
         <div id="card">
             <div className="img-box">
-                <img src="/work-regenvet.png" alt="about"/>
+                <img className="img-card" src={img} alt={name}/>
             </div>
             <div className="text-box">
                 <div className="text-group">
-                    <span className="nameLabel">REGENVET SYSTEM</span>
-                    <span className="typeLabel">IDENTIDADE VISUAL</span>
+                    <span className="nameLabel">{name}</span>
+                    <span className="typeLabel">{type}</span>
                 </div>
-                <div className="yearCard">2014</div>
+                <div className="yearCard">{date}</div>
             </div>
         </div>
+        </Link>
     )
 }

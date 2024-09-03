@@ -31,15 +31,19 @@
   max-width: 100vw;
 }
 .bloco{
-  width: 50%;
   display: flex;
+  text-align: justify;
+  justify-content: center;
+  min-height: 16rem;
+
 }
 .container{
   display: flex;
-  width: 95%;
   flex-direction: row;
   align-items: center;
   text-align: center;
+  margin: auto;
+  padding: 1rem;
 }
 a {
   font-weight: 500;
@@ -62,7 +66,15 @@ h1 {
   font-size: 6.2em;
   line-height: 1.1;
 }
-
+h2 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 1.8em;
+  line-height: 1.1;
+  margin: 0;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -81,8 +93,34 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-
+.dark-theme{
+  background: #ffffff;
+  color: #000;
+  border-color: #ffffff;
+}
+.button{
+  font-size: 18px;
+  color: #ffffff;
+  background: var(--dark);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0px;
+  /* border-radius: 40px; */
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 12px 19px;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid var(--dark);
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+}
+.bloco > h2{
+  align-content: end;
+  margin-left: 1rem;
+}
 @media (max-width: 920px) {
   #root {
 
@@ -98,7 +136,12 @@ button:focus-visible {
     }
     h1{
       font-size: 1.5rem;
-
+    }
+    h3{
+      font-size: .5rem;
+    }
+    h2{
+      font-size: 1rem;
     }
   .full-container{
       display: flex;
@@ -107,5 +150,12 @@ button:focus-visible {
       align-items: center;
       text-align: center;
     }
+    .bloco{
+      min-height: 5rem;
 
+    }
+    .bloco > h2{
+      align-content: center;
+      margin-left: 0;
+    }
 }

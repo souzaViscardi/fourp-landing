@@ -1,8 +1,10 @@
 #card{
     display: flex;
-    width: 98%;
+    width: 47rem;
     flex-direction: column;
     font-weight: 600;
+    margin-bottom: 1rem;
+    
 }
 #card img{
     flex-shrink: 0;
@@ -22,16 +24,22 @@
 .text-box{
     display: flex;
     justify-content: space-between;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    border-top: none !important
+    border: 1px solid rgba(255, 255, 255, 0.258);
+    border-top: none !important;
+    background: rgb(10, 10, 10);
 }
 .text-box p{
     padding-left: 2rem;
 }
 .yearCard{
     align-self: center;
+    color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    padding: 2rem;
+    margin: 2rem;
+    padding: .3rem;
+    border: 1px solid  rgba(255, 255, 255, 0.258);
+    width: 5rem;
+
 }
 .text-group{
     display: flex;
@@ -46,3 +54,33 @@
 .typeLabel{
     font-size: .8rem !important;
 }
+.img-card:hover{
+    translate: none; 
+    rotate: none; 
+    scale: none; 
+    animation-name: img-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    overflow: hidden
+}
+@keyframes img-anim {
+    from {
+      transform: scale(1) translateX(0);
+    }
+    to {
+      transform: scale(1.5)
+    }
+  }
+
+  @media (max-width: 920px) {
+    #card {
+
+        width: 20rem !important;
+        height: 15rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    
+      }
+
+  
+  }
