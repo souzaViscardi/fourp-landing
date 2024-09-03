@@ -21,6 +21,10 @@
   --fourp: #ff632d;
   --fourp2: #c400ff;
   background-color: #161616;
+  
+}
+html {
+  scroll-behavior: smooth;
 }
 .full-container{
   display: flex;
