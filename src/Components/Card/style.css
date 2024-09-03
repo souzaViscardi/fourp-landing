@@ -1,6 +1,6 @@
 #card{
     display: flex;
-    width: 49vw;
+    width: 47.1vw;
     flex-direction: column;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -60,7 +60,6 @@
     scale: none; 
     animation-name: img-anim;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
     overflow: hidden
 }
 @keyframes img-anim {
@@ -72,11 +71,22 @@
     }
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 520px) {
     #card {
 
         width: 20rem !important;
         height: 15rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    
+      }
+  
+  }
+  @media (min-width: 600px) and (max-width: 900px) {
+    #card {
+
+        width: 95vw;
+        height: 20rem;
         margin: auto;
         margin-bottom: 1rem;
     
@@ -91,6 +101,7 @@
         animation-name: img-anim;
         animation-duration: 2s;
         animation-iteration-count: infinite;
-        overflow: hidden
+        overflow: hidden;
+
     }
 }

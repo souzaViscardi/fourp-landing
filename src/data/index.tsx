@@ -38,3 +38,30 @@ export const trabalhos=[
 
     },
 ]
+
+export const services = [
+    {
+        name:"IDENTIDADE VISUAL",
+        description:"A harmonia entre elementos gráficos, tipografia e conceitos visuais desencadeia um vasto universo de criatividade no serviço de criação de identidade visual"
+    },
+    {
+        name:"EDIÇÃO DE VÍDEO",
+        description:"A sinergia entre imagens, trilha sonora e edição visual abre um vasto horizonte de criatividade no serviço de edição de vídeos."
+    },
+    {
+        name:"DIAGRAMAÇÃO",
+        description:"A combinação entre layout, tipografia e fluidez visual abre um universo de possibilidades criativas na diagramação."
+    },
+    {
+        name:"FOTOGRAFIA",
+        description:"A interação entre composição, iluminação e momento capturado abre um mundo de possibilidades criativas na fotografia."
+    },
+    {
+        name:"MOTION DESIGN",
+        description:"A interação entre elementos gráficos, tipografia e movimento abre um mundo de possibilidades criativas."
+    },
+    {
+        name:"MARKETING DIGITAL",
+        description:"A integração entre estratégias de conteúdo, análise de dados e engajamento com o público abre um vasto universo de possibilidades criativas no mundo digital."
+    }
+]

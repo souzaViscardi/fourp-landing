@@ -4,7 +4,10 @@
 h1.title {
     margin-bottom: 0;
     margin-top: 0;
-
+}
+.left{
+    align-self: flex-start !important;
+    margin: 0 !important;
 }
 .gradient-collor{
     background-image: linear-gradient(45deg, var(--fourp),var(--fourp2));
@@ -62,19 +65,22 @@ img {
     overflow: hidden
 }
 .aboutImg{
-    width: 90rem;
+    width: 100vw;
 }
 .nossoTrabalho{
     text-align: justify;
 }
 #mosaic{
-    width: 100%;
+    width: 95vw;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
 }
-
+.description{
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+}
 #mosaic > div {
     flex-wrap: wrap !important;
     justify-content: flex-start !important;
@@ -88,7 +94,7 @@ img {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 520px) {
     .imgContainer{
         width: 100%;
         height: 15rem !important;
@@ -101,9 +107,7 @@ img {
         height: 7rem !important;
 
     }
-    .aboutImg{
-        width: 30rem;
-    }
+
 #mosaic > div {
         flex-direction: column;
     }
@@ -118,4 +122,8 @@ img {
     .bloco{
         width: 100% !important;
     }
+    
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) {
   }

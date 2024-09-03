@@ -1,7 +1,8 @@
 
 import  "./style.css"
 import Card from "../../Components/Card/Card"
-import {trabalhos} from "../../data/index"
+import {trabalhos, services} from "../../data/index"
+import ServicesCard from "../../Components/ServicesCard/ServicesCard"
 export default function Home(){
     return(
         <div id="home" className="full-container">
@@ -22,7 +23,7 @@ export default function Home(){
                     <h1> NOSSOS TRABALHOS</h1>
                 </div>
                 <div className="bloco">
-                    <h3>Apresentamos alguns exemplos de nosso trabalho, evidenciando nossa busca pela excelência em cada projeto. 
+                    <h3 className="description">Apresentamos alguns exemplos de nosso trabalho, evidenciando nossa busca pela excelência em cada projeto. 
                     Os exemplos abaixo refletem nosso compromisso com a mais alta qualidade e dedicação.</h3>
                 </div>
             </div>
@@ -51,6 +52,16 @@ export default function Home(){
             </div>
             <div className="container">
                 <h3>Fundada em 2023, a Fourp tem como objetivo transformar ideias em realidades através do design. Somos uma agência de Design, audiovisual e marketing, comprometida em transmitir a mensagem mais impactante e memorável por meio de ideias criativas e inovadoras. Nossa missão é elevar a sua marca ao próximo nível, garantindo que sua mensagem seja comunicada de forma eficaz.</h3>
+            </div>
+            <div className="container left">
+                    <h1 className="title">Nossos <br/>Serviços</h1>
+            </div>
+            <div id="mosaic">
+                {
+                    services.map((el, index) => (
+                        <ServicesCard key={index} description={el.description} name={el.name}/>
+                    ))
+                }
             </div>
         </div>
     )
