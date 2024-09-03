@@ -97,6 +97,10 @@ img {
         align-items: center;
         overflow: hidden
     }
+    .animationImgContainer{
+        height: 7rem !important;
+
+    }
     .aboutImg{
         width: 30rem;
     }

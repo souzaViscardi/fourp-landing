@@ -81,6 +81,16 @@
         margin-bottom: 1rem;
     
       }
-
   
   }
+  @media(hover: hover) and (pointer: fine) {
+    .img-card:hover{
+        translate: none; 
+        rotate: none; 
+        scale: none; 
+        animation-name: img-anim;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        overflow: hidden
+    }
+}
