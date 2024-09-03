@@ -1,5 +1,4 @@
 import {router} from "./Routes/Root"
-import './App.css'
 import './responsive.css'
 
 import NavBar from './Components/NavBar/NavBar';

@@ -1,0 +1,35 @@
+#card{
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+    font-weight: 600;
+}
+#card img{
+    flex-shrink: 0;
+    overflow: hidden;
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+
+}
+.img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 20rem;
+}
+.text-box{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-top: none !important
+}
+.text-box p{
+    padding-left: 2rem;
+}
+.yearCard{
+    align-self: center;
+    text-align: center;
+    padding: 2rem;
+}

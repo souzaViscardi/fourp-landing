@@ -1,5 +1,6 @@
 
 import  "./style.css"
+import Card from "../../Components/Card/Card"
 export default function Home(){
     return(
         <div id="home" className="full-container">
@@ -24,6 +25,26 @@ export default function Home(){
                     Os exemplos abaixo refletem nosso compromisso com a mais alta qualidade e dedicação.</h2>
                 </div>
             </div>
+            <div id="mosaic">
+                <div className="container">
+                    <div className="bloco">
+                        <Card/>
+                    </div>
+                    <div className="bloco">
+                        <Card/>
+                    </div>
+                </div>
+                <br></br>
+                <div className="container">
+                    <div className="bloco">
+                        <Card/>
+                    </div>
+                    <div className="bloco">
+                        <Card/>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
