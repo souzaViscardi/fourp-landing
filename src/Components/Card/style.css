@@ -1,6 +1,6 @@
 #card{
     display: flex;
-    width: 47rem;
+    width: 49vw;
     flex-direction: column;
     font-weight: 600;
     margin-bottom: 1rem;
