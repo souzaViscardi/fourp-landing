@@ -22,7 +22,7 @@
 .text-box{
     display: flex;
     justify-content: space-between;
-    border: 1px solid gray;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     border-top: none !important
 }
 .text-box p{
@@ -32,4 +32,17 @@
     align-self: center;
     text-align: center;
     padding: 2rem;
+}
+.text-group{
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+}
+.nameLabel{
+    color: aliceblue !important;
+}
+.typeLabel{
+    font-size: .8rem !important;
 }

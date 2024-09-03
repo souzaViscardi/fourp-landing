@@ -77,7 +77,13 @@ img {
         flex-direction: column;
     }
     #card{
-        width: 45rem !important;
+        width: 35rem !important;
         margin-left: 2rem;
+    }
+    #mosaic{
+        width: 95vw;
+    }
+    .bloco{
+        width: 100% !important;
     }
   }
