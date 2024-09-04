@@ -5,7 +5,7 @@
     font-weight: 600;
     margin-bottom: 1rem;
 }
-#card img{
+.card img{
     flex-shrink: 0;
     overflow: hidden;
     object-fit: cover;
@@ -71,7 +71,7 @@
   }
 
   @media (max-width: 520px) {
-    #card {
+    .card {
 
         width: 20rem !important;
         height: 15rem;
@@ -82,7 +82,7 @@
   
   }
   @media (min-width: 600px) and (max-width: 900px) {
-    #card {
+    .card {
 
         width: 95vw;
         height: 20rem;
