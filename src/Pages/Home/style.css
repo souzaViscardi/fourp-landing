@@ -100,6 +100,9 @@ img {
         margin: auto !important;
         text-align: center;
     }
+    .logo{
+        width: 5rem !important;
+    }
     .description{
         height: 15rem;
         overflow: scroll;
@@ -135,6 +138,9 @@ img {
   @media (min-width: 600px) and (max-width: 900px) {
     .title span{
         font-size: 5rem;
+    }
+    .logo{
+        width: 8rem;
     }
     .description{
         height: 15rem;

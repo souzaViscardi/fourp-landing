@@ -24,7 +24,7 @@
     @keyframes slideAnimation {
         0% { transform: translateX(0vw); }
 
-        100% { transform: translateX(-520vw); }
+        100% { transform: translateX(-550vw); }
     }
   }
 
@@ -32,6 +32,6 @@
     @keyframes slideAnimation {
         0% { transform: translateX(0vw); }
 
-        100% { transform: translateX(-130vw); }
+        100% { transform: translateX(-150vw); }
     }
   }
