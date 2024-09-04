@@ -79,7 +79,6 @@ img {
 .description{
     justify-content: center;
     align-content: center;
-    padding: 2rem;
 }
 #mosaic > div {
     flex-wrap: wrap !important;

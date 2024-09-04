@@ -38,7 +38,7 @@
 
       }
       #simpleCard > div > h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 0;
         text-align: start;
         padding-left: .5rem;
@@ -46,7 +46,7 @@
     #simpleCard > div > div {
         text-align: start;
         color: rgba(255, 255, 255, 0.258);
-        font-size: .6rem;
+        font-size: .8rem;
         padding-top: .9rem;
         padding-left: .5rem;
         padding-right: .5rem;

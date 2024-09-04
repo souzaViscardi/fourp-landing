@@ -36,7 +36,6 @@ html {
 }
 .bloco{
   display: flex;
-  text-align:start;
   justify-content: center;
   min-height: 16rem;
 
@@ -135,7 +134,7 @@ button:focus-visible {
       font-size: 1rem;
     }
     .title{
-      font-size: 4rem !important;
+      font-size: 3rem !important;
     }
     h1{
       font-size: 1.5rem;
@@ -143,10 +142,11 @@ button:focus-visible {
 
     }
     h3{
-      font-size: .6rem;
+      font-size: 1rem;
     }
     h2{
-      font-size: 1rem;
+      font-size: 1.5rem;
+      margin: 0;
     }
   .full-container{
       display: flex;
@@ -157,7 +157,6 @@ button:focus-visible {
     }
     .bloco{
       min-height: 5rem;
-
     }
     .bloco > h2{
       align-content: center;
@@ -168,6 +167,7 @@ button:focus-visible {
   h1 {
     font-size: 3.2em;
     line-height: 1.1;
+    margin: auto;
   }
   h2 {
     font-size: 1.6em;
