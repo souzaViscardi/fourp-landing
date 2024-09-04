@@ -1,11 +1,12 @@
 
 import  "./style.css"
 import Card from "../../Components/Card/Card"
-import {trabalhos, services, testimonial} from "../../data/index"
+import {trabalhos, services, testimonial, faq} from "../../data/index"
 import ServicesCard from "../../Components/ServicesCard/ServicesCard"
 import {Container,Mosaic,Bloc} from "../../Components/Layout"
 import TestimonialCard from "../../Components/TestimonialCard/TestimonialCard"
 import Carousel from "../../Components/Carousel/Carousel"
+import CollapsedButton from "../../Components/CollapsedButton/CollapsedButton"
 export default function Home(){
     return(
         <div id="home" className="full-container">
@@ -97,6 +98,17 @@ export default function Home(){
                     ))
                 }
             </Carousel>
+            <Container>
+                    <h1 >PERGUNTAS<br/> FREQUENTES</h1>
+
+            </Container>
+            <Mosaic>
+                {
+                    faq.map((el, index) => (
+                        <CollapsedButton key={index} ask={el.ask} response={el.resp}/>
+                    ))
+                }
+            </Mosaic>
         </div>
     )
 }

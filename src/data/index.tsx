@@ -104,3 +104,26 @@ export const testimonial = [
         role:"Gerente de Tecnologia"
     }
 ]
+
+export const faq = [
+    {
+        ask:"QUAIS AS FORMAS DE PAGAMENTO?",
+        resp:"Os pagamentos são preferencialmente via Pix com uma entrada de 50% do orçamento e os 50% restante no ato da entrega do projeto."
+    },
+    {
+        ask:"COMO FUNCIONA O PROCESSO DE CRIAÇÃO DE IDENTIDADE VISUAL?",
+        resp:"O processo de criação de identidade visual envolve várias etapas fundamentais para garantir que a identidade da marca seja coesa, atraente e representativa dos valores e objetivos da empresa. Seguindo um briefing inicial coletando todas informações e ideias possíveso do cliente para dar sequência na pesquisa e análise do nicho, concorrentes e etc, e assim chegar num conceito para desenvolver o design do logo."
+    },
+    {
+        ask:"COMO É O PROCESSO DE EDIÇÃO DE VÍDEO E QUANTO TEMPO LEVA PARA FINALIZAR UM PROJETO?",
+        resp:"Cada vídeo é um projeto único, o processo inclui a coleta de material bruto, cortes, adição de efeitos, correção de cor, trilha sonora e revisões."
+    },
+    {
+        ask:"QUAIS SÃO OS BENEFÍCIOS DE INVESTIR EM MARKETING DIGITAL PARA MINHA EMPRESA?",
+        resp:"Investir em marketing digital oferece benefícios significativos para o crescimento da sua empresa. Permite alcançar um público global, segmentar audiências com precisão e é mais econômico que o marketing tradicional. Além disso, possibilita medir e ajustar campanhas em tempo real, e facilita a interação direta com os clientes através de redes sociais e outras plataformas digitais, aumentando o engajamento e a fidelidade à marca. Esses fatores contribuem para maior visibilidade e eficácia das suas estratégias de marketing, promovendo um crescimento sustentável."
+    },
+    {
+        ask:"COMO FUNCIONA A DIAGRAMAÇÃO E CRIAÇAO DE EBOOKS?",
+        resp:"O processo de diagramação e criação de eBooks começa com uma reunião para entender o conteúdo e o estilo desejado, seguida pela organização do material. Um layout inicial é criado e aplicado a todas as páginas, ajustando texto e imagens para uma apresentação. O eBook é então enviado ao cliente para feedback e revisões. Após as revisões, o eBook é convertido para formatos digitais como PDF e EPUB e passa por um teste de qualidade. Finalmente, os arquivos finais são entregues ao cliente."
+    }
+]
