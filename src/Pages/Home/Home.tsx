@@ -22,7 +22,7 @@ export default function Home(){
                 <div className="bloco">
                     <h1> NOSSOS TRABALHOS</h1>
                 </div>
-                <div className="bloco">
+                <div className="bloco description">
                     <h3 className="description">Apresentamos alguns exemplos de nosso trabalho, evidenciando nossa busca pela excelência em cada projeto. 
                     Os exemplos abaixo refletem nosso compromisso com a mais alta qualidade e dedicação.</h3>
                 </div>
@@ -40,8 +40,8 @@ export default function Home(){
             </div>
             <div className="container">
                 <h1 className="title">    
-                    <span>SOBRE A</span><br/>
-                    <span>FOURP</span>
+                    SOBRE A<br/>
+                    FOURP
                 </h1>
             </div>
             <div className="imgContainer">
@@ -53,8 +53,12 @@ export default function Home(){
             <div className="container">
                 <h3>Fundada em 2023, a Fourp tem como objetivo transformar ideias em realidades através do design. Somos uma agência de Design, audiovisual e marketing, comprometida em transmitir a mensagem mais impactante e memorável por meio de ideias criativas e inovadoras. Nossa missão é elevar a sua marca ao próximo nível, garantindo que sua mensagem seja comunicada de forma eficaz.</h3>
             </div>
-            <div className="container left">
-                    <h1 className="title">Nossos <br/>Serviços</h1>
+            <div className="container">
+                <div className="bloco">
+                    <h1 className="left"> NOSSOS SERVIÇOS</h1>
+                </div>
+                <div className="bloco description">
+                </div>
             </div>
             <div id="mosaic">
                 {
@@ -62,6 +66,22 @@ export default function Home(){
                         <ServicesCard key={index} description={el.description} name={el.name}/>
                     ))
                 }
+            </div>
+            <div className="container">
+                <div className="bloco">
+                    <h1>NOSSA INSPIRAÇÃO</h1>
+                </div>
+                <div className="bloco ">
+                    <h3 className="description">Nossa inspiração vem da profunda conexão que criamos com nossos clientes e suas histórias únicas. Nossa missão é representar essas histórias de maneira autêntica, solucionando problemas com criatividade e entregando resultados excepcionais. Não nos contentamos com o comum; ao invés disso, buscamos transformar os conceitos visuais de nossos clientes em algo memorável e impactante, refletindo a essência de suas marcas de forma inovadora e personalizada.
+                        <br></br>
+                        <br></br>
+                        Nossa visão é ser uma referência no mercado, lembrada por nosso compromisso em criar relacionamentos genuínos e duradouros. Na Fourp, valorizamos o trabalho ético, a responsabilidade social e o profissionalismo, e nos orgulhamos de ser uma empresa onde as pessoas se sentem acolhidas e valorizadas. Ao focar no cliente, cultivamos a coragem e a criatividade necessárias para oferecer soluções transparentes e eficazes. Com essa dedicação, não apenas cumprimos as demandas, mas também construímos vínculos de confiança que fortalecem a relação entre a empresa e seus clientes.
+                    </h3>
+                    <br></br>
+                    <br></br>
+                    <img className="logo" src="./signature.png"></img>
+                </div>
+                
             </div>
         </div>
     )
