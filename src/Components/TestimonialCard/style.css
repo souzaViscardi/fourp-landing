@@ -5,6 +5,7 @@
     padding: 2rem;
     width: 28vw;
     height: auto;
+    min-height: 20rem;
     span{
         font-size: .8rem;
         text-align: left;
