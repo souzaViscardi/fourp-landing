@@ -1,10 +1,9 @@
-#card{
+.card{
     display: flex;
     width: 47.1vw;
     flex-direction: column;
     font-weight: 600;
     margin-bottom: 1rem;
-    
 }
 #card img{
     flex-shrink: 0;

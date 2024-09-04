@@ -1,0 +1,51 @@
+#mosaic{
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 10rem;
+    width: 47vw;
+    height: fit-content;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  @media (max-width: 520px) {
+      .bloco{
+        min-height: 5rem;
+      }
+      .bloco > h2{
+        align-content: center;
+        margin-left: 0;
+      }
+      .bloco{
+        width: 100% !important;
+    }
+  }
+  @media (min-width: 600px) and (max-width: 900px) {
+    h1 {
+      font-size: 3em;
+      line-height: 1.1;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.6em;
+    }
+    h3 {
+      font-size: 1em;
+      margin: 0;
+    }
+  }

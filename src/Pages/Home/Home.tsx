@@ -1,8 +1,11 @@
 
 import  "./style.css"
 import Card from "../../Components/Card/Card"
-import {trabalhos, services} from "../../data/index"
+import {trabalhos, services, testimonial} from "../../data/index"
 import ServicesCard from "../../Components/ServicesCard/ServicesCard"
+import {Container,Mosaic,Bloc} from "../../Components/Layout"
+import TestimonialCard from "../../Components/TestimonialCard/TestimonialCard"
+import Carousel from "../../Components/Carousel/Carousel"
 export default function Home(){
     return(
         <div id="home" className="full-container">
@@ -18,60 +21,61 @@ export default function Home(){
             <div className="animationImgContainer">
                 <img className="scaleDown" src="/hero-full.png" alt="about"/>
             </div>
-            <div className="container">
-                <div className="bloco">
-                    <h1> NOSSOS TRABALHOS</h1>
-                </div>
-                <div className="bloco description">
+            <Container>
+                <Bloc>
+                    <h1 className="left"> NOSSOS<br/> TRABALHOS</h1>
+                </Bloc>
+                <Bloc>
                     <h3 className="description">Apresentamos alguns exemplos de nosso trabalho, evidenciando nossa busca pela excelência em cada projeto. 
                     Os exemplos abaixo refletem nosso compromisso com a mais alta qualidade e dedicação.</h3>
-                </div>
-            </div>
-            <div id="mosaic">
+                </Bloc>
+            </Container>
+            <Mosaic>
                 {trabalhos.map((el:any, index:number) => (
-                    <div key={index} className="bloco">
+                    <Bloc key={index}>
                         <Card name={el.name} key={index} img={el.imgCard} url={el.url} date={el.date} type={el.type}/>
-                    </div>
+                    </Bloc>
                 ))}
 
-            </div>
-            <div className="container">
+            </Mosaic>
+            <Container>
                 <a className="button dark-theme">OUTROS TRABALHOS</a>
-            </div>
-            <div className="container">
+            </Container>
+            <Container>
                 <h1 className="title">    
                     SOBRE A<br/>
                     FOURP
                 </h1>
-            </div>
-            <div className="imgContainer">
+            </Container>
+            <Container classe="imgContainer">
                 <img className="aboutImg" src="/about.png" alt="about"/>
-            </div>
-            <div className="container">
+            </Container>
+            <Container>
                 <h2  className="gradient-collor">BY PEOPLE, FOR PEOPLE</h2>
-            </div>
-            <div className="container">
+            </Container>
+            <Container>
                 <h3>Fundada em 2023, a Fourp tem como objetivo transformar ideias em realidades através do design. Somos uma agência de Design, audiovisual e marketing, comprometida em transmitir a mensagem mais impactante e memorável por meio de ideias criativas e inovadoras. Nossa missão é elevar a sua marca ao próximo nível, garantindo que sua mensagem seja comunicada de forma eficaz.</h3>
-            </div>
-            <div className="container">
-                <div className="bloco">
-                    <h1 className="left"> NOSSOS SERVIÇOS</h1>
-                </div>
-                <div className="bloco description">
-                </div>
-            </div>
-            <div id="mosaic">
+            </Container>
+            <Container>
+                <Bloc>
+                    <h1 className="left"> NOSSOS<br/> SERVIÇOS</h1>
+                </Bloc>
+                <Bloc>
+                    ""
+                </Bloc>
+            </Container>
+            <Mosaic>
                 {
                     services.map((el, index) => (
                         <ServicesCard key={index} description={el.description} name={el.name}/>
                     ))
                 }
-            </div>
-            <div className="container">
-                <div className="bloco">
-                    <h1>NOSSA INSPIRAÇÃO</h1>
-                </div>
-                <div className="bloco ">
+            </Mosaic>
+            <Container>
+                <Bloc>
+                    <h1 className="left">NOSSA<br/> INSPIRAÇÃO</h1>
+                </Bloc>
+                <Bloc>
                     <h3 className="description">Nossa inspiração vem da profunda conexão que criamos com nossos clientes e suas histórias únicas. Nossa missão é representar essas histórias de maneira autêntica, solucionando problemas com criatividade e entregando resultados excepcionais. Não nos contentamos com o comum; ao invés disso, buscamos transformar os conceitos visuais de nossos clientes em algo memorável e impactante, refletindo a essência de suas marcas de forma inovadora e personalizada.
                         <br></br>
                         <br></br>
@@ -80,9 +84,19 @@ export default function Home(){
                     <br></br>
                     <br></br>
                     <img className="logo" src="./signature.png"></img>
-                </div>
+                </Bloc>
                 
-            </div>
+            </Container>
+            <Container>
+                <h1 >FEEDBACKS DOS<br/> NOSSOS CLIENTES</h1>
+            </Container>
+            <Carousel>
+                {
+                    testimonial.map((el, index) => (
+                        <TestimonialCard key={index} description={el.description} img={el.img} name={el.name} role={el.role}/>
+                    ))
+                }
+            </Carousel>
         </div>
     )
 }

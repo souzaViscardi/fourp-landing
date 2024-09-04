@@ -1,0 +1,32 @@
+
+
+#testimonialCard{
+    border: solid rgba(255, 255, 255, 0.258) 1px;
+    padding: 2rem;
+    width: 28vw;
+    height: auto;
+    span{
+        font-size: .8rem;
+        text-align: left;
+        margin-top: 10px;
+        font-weight: 1;
+    }
+    h3{
+        margin-top: 1rem;
+        margin-left: 1vw;
+        text-align: start;
+    }
+    > div {
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+        width: 6rem;
+    }
+}
+@media (max-width: 520px) {
+    #testimonialCard{
+        width: 80vw;
+
+    }
+  }
