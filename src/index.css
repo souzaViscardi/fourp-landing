@@ -16,11 +16,12 @@
   --font_instrument: "Instrument Sans", sans-serif;
   max-width: 100vw;
   padding: 0%;
+    background-color: #000000;
+
 }
 :root{
   --fourp: #ff632d;
   --fourp2: #c400ff;
-  background-color: #161616;
   
 }
 html {

@@ -9,6 +9,8 @@
         padding: 1rem;
         font-weight: 600;
         border: solid rgba(255, 255, 255, 0.258) 1px;
+        background-color: rgb(10, 10, 10);
+
     }
     >div{
         text-align: justify;
