@@ -8,10 +8,13 @@ import TestimonialCard from "../../Components/TestimonialCard/TestimonialCard"
 import Carousel from "../../Components/Carousel/Carousel"
 import CollapsedButton from "../../Components/CollapsedButton/CollapsedButton"
 import { Link } from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
 
 export default function Home(){
     return(
         <div id="home" className="full-container">
+            <ScrollRestoration />
+
             <span id="slogan">BY PEOPLE, FOR PEOPLE</span>
             <h1 className="title">    
                 <span>STUDIO</span><br/>

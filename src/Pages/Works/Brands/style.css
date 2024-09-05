@@ -4,6 +4,9 @@
         text-align: start;
         font-size: 2rem;
     }
+    .imgContainer{
+        margin-bottom: 1rem;
+    }
     h3{
         text-align: start;
     }

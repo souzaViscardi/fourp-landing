@@ -1,6 +1,8 @@
 import {pages} from "../../../data/index"
 import { useParams } from 'react-router-dom';
 import {Container,Bloc} from "../../../Components/Layout"
+import { ScrollRestoration } from "react-router-dom";
+
 import "./style.css"
 interface Page{
     id:string
@@ -23,6 +25,7 @@ export function Brands(){
     console.log(page)
     return(
         <div className="full-container" id="Brands">
+            <ScrollRestoration />
             <Container classe="container margin-top">
                 <Bloc>
                     <h2>{page.nome}</h2>
@@ -76,12 +79,9 @@ export function Brands(){
             <br></br>
             {
                 page.bottomImgs.map((el, index) => (
-                    <>
-                <Container classe="imgContainer">
-                    <img key={index} className="aboutImg" src={el} alt="about"/>
+                <Container key={index} classe="imgContainer">
+                    <img key={el} className="aboutImg" src={el} alt="about"/>
                 </Container>
-                    <br/>
-                    </>
                 ))
             }
         </div>

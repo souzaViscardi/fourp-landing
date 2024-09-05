@@ -63,7 +63,7 @@ ul{
   
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 .full-container{
   display: flex;
