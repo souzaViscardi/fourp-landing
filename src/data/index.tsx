@@ -9,14 +9,14 @@ export const trabalhos=[
         name: "REGENVET SYSTEM",
         type: "IDENTIDADE VISUAL",
         imgCard: "/work-regenvet.png",
-        url:"regenvet",
+        id:"marcas/regenvet",
         date: "2024"
     },
     {
         name: "DRA. IZABELLA BATISTA",
         type: "ENSAIO FOTOGRAFICO",
         imgCard: "/work-2.png",
-        url:"izabelabatista",
+        id:"fotos/izabelabatista",
         date: "2024"
 
 
@@ -25,7 +25,7 @@ export const trabalhos=[
         name: "FERNANDO BELOTTO",
         type: "IDENTIDADE VISUAL",
         imgCard: "/work-3.png",
-        url:"belotto",
+        id:"marcas/belotto",
         date: "2024"
 
     },
@@ -33,7 +33,7 @@ export const trabalhos=[
         name: "FERNANDO BELOTTO",
         type: "EDIÇÃO DE VÍDEO",
         imgCard: "/work-4.png",
-        url:"belottovideos",
+        id:"videos/belottovideos",
         date: "2024"
 
     },
@@ -126,4 +126,37 @@ export const faq = [
         ask:"COMO FUNCIONA A DIAGRAMAÇÃO E CRIAÇAO DE EBOOKS?",
         resp:"O processo de diagramação e criação de eBooks começa com uma reunião para entender o conteúdo e o estilo desejado, seguida pela organização do material. Um layout inicial é criado e aplicado a todas as páginas, ajustando texto e imagens para uma apresentação. O eBook é então enviado ao cliente para feedback e revisões. Após as revisões, o eBook é convertido para formatos digitais como PDF e EPUB e passa por um teste de qualidade. Finalmente, os arquivos finais são entregues ao cliente."
     }
+]
+
+export const pages = [
+    {
+        id:"regenvet",
+        cliente: "ALINE APARECIDA",
+        ano:"2024",
+        categoria:"IDENTIDADE VISUAL",
+        nome: "REGENVET SYSTEM",
+        description: "Empresa de ortopedia veterinária, fabricante de implantes e instrumentos para médicos veterinários.",
+        finalProduct:"/work-miv-regenvet-1.png",
+        design: "O design do Ícone da Regenvet foi concebido com base no conceito de regeneração óssea, onde as células se reagrupam para iniciar o processo de regeneração. O ícone em forma de 'R' incorpora elementos visuais que simbolizam esse processo, criando uma conexão direta com a missão da empresa.",
+        cores:"A utilização das cores combinadas entre Azul e Roxo é dada pelo fato da cor azul ser frequentemente associada à confiabilidade e autoridade e a cor roxa uma cor sofisticada, definindo exatamente o que a Regenvet prega como empresa.",
+        conceito:"As formas fluidas transmite a ideia de inovação e cuidado, refletindo a expertise da Regenvet na produção de implantes e instrumentais veterinários de alta qualidade.",
+        conceptImg: "/work-miv-regenvet-2.png",
+        idealizacao: "Proporcionar aos médicos veterinários visualmente a conexão entre tecnologia e cuidados de saúde animal, mostrando através do posicionamento da marca a confiança e segurança que ela entrega.",
+        bottomImgs:["/work-miv-regenvet-3.png", "/work-miv-regenvet-4.png"]
+    },
+    {
+        id:"belotto",
+        cliente: "FERNANDO BELOTTO",
+        ano:"2024",
+        categoria:"IDENTIDADE VISUAL",
+        nome: "FERNANDO BELOTTO",
+        description: "Influecer Digital voltado para o ramo de programação com foco em criação de conteúdo para YouTube.",
+        finalProduct:"/work-miv-fernandobelotto-1.jpg",
+        design: "A criação do Logo foi concebida com base na ideia de tecnologia, incorporando uma forte personalidade que Fernando Belotto personifica com maestria. A figura do gato preto não apenas adiciona um toque de mistério, mas também simboliza uma conexão intrínseca com a tecnologia. O gato, conhecido por sua agilidade e astúcia, reflete a velocidade e a inteligência que são essenciais no mundo da tecnologia.",
+        cores:"As cores utilizadas, predominantemente o preto e o branco, são uma homenagem à natureza binária da programação, enquanto simultaneamente evocam um senso de mistério e precisão, características essenciais no mundo tecnológico. O toque de vermelho adiciona uma sensação de poder e energia, destacando ainda mais a natureza dinâmica e impactante da marca.",
+        conceito:"A escolha de destacar o sobrenome Belotto busca não apenas enfatizar a identidade pessoal, mas também ressoar com a marca de forma memorável. A combinação do sobrenome com o ícone do gato cria uma sinergia que evoca uma imagem de modernidade e inovação.",
+        conceptImg: "/work-miv-fernandobelotto-2.jpg",
+        idealizacao: "A proposta foi criar um resultado que seja marcante e que crie conexão com os inscritos, seguidores e alunos do Fernando Belotto, com uma marca que tenha uma boa presença e esteja bem adaptada ao mundo de tecnologia.",
+        bottomImgs:["/work-miv-fernandobelotto-3.jpg", "/work-miv-fernandobelotto-4.jpg"]
+    },
 ]

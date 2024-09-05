@@ -7,6 +7,8 @@ import {Container,Mosaic,Bloc} from "../../Components/Layout"
 import TestimonialCard from "../../Components/TestimonialCard/TestimonialCard"
 import Carousel from "../../Components/Carousel/Carousel"
 import CollapsedButton from "../../Components/CollapsedButton/CollapsedButton"
+import { Link } from "react-router-dom";
+
 export default function Home(){
     return(
         <div id="home" className="full-container">
@@ -34,7 +36,7 @@ export default function Home(){
             <Mosaic>
                 {trabalhos.map((el:any, index:number) => (
                     <Bloc key={index}>
-                        <Card name={el.name} key={index} img={el.imgCard} url={el.url} date={el.date} type={el.type}/>
+                        <Card name={el.name} key={index} img={el.imgCard} url={"/trabalhos/"+el.id} date={el.date} type={el.type}/>
                     </Bloc>
                 ))}
 
@@ -89,7 +91,7 @@ export default function Home(){
                 
             </Container>
             <Container>
-                <h1 >FEEDBACKS DOS<br/> NOSSOS CLIENTES</h1>
+                <h1>FEEDBACKS DOS<br/>NOSSOS CLIENTES</h1>
             </Container>
             <Carousel>
                 {
@@ -99,7 +101,7 @@ export default function Home(){
                 }
             </Carousel>
             <Container>
-                    <h1 >PERGUNTAS<br/> FREQUENTES</h1>
+                    <h1 >PERGUNTAS<br/>FREQUENTES</h1>
 
             </Container>
             <Mosaic>
@@ -109,6 +111,26 @@ export default function Home(){
                     ))
                 }
             </Mosaic>
+            <Container>
+            <h1 >VAMOS TRABALHAR<br/>JUNTOS?</h1>
+            </Container>
+            <Container>
+                <a className="button dark-theme">ENVIAR MENSSAGEM</a>
+            </Container>
+            <Container classe="imgContainer">
+                <img className="aboutImg" src="/about-4.jpg" alt="about"/>
+            </Container>
+            <Container classe="imgContainer">
+                <h2>NOS ACOMPANHE EM NOSSAS REDES SOCIAIS.</h2>
+            </Container>
+            <Container>
+                <ul>
+                    <li><Link target="_blank"  to="https://www.instagram.com/studiofourp/">INSTAGRAM</Link><img src="/instagram.png" /></li>
+                    <li><Link target="_blank"  to="https://www.tiktok.com/@studio.fourp">TIKTOK</Link><img src="/tiktok.png" /></li>
+                    <li><Link target="_blank"  to="https://www.linkedin.com/company/studiofourp">LINKEDIN</Link><img src="/linkedin.png" /></li>
+                </ul>
+            </Container>
+            
         </div>
     )
 }

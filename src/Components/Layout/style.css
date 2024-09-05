@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: flex-start;
     min-height: 10rem;
-    width: 47vw;
+    min-width: 47vw;
     height: fit-content;
   }
 
