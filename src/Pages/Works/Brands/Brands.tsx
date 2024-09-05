@@ -1,6 +1,6 @@
 import {pages} from "../../../data/index"
 import { useParams } from 'react-router-dom';
-import {Container,Mosaic,Bloc} from "../../../Components/Layout"
+import {Container,Bloc} from "../../../Components/Layout"
 import "./style.css"
 interface Page{
     id:string
