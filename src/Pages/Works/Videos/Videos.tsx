@@ -78,9 +78,8 @@ export function Videos(){
             
             {
                 page.bottomvideos.map((el, index) => (
-                <Container key={index} classe="imgContainer">
+                <Container key={index} classe="videoContainer">
                     <iframe
-                            className="aboutImg"
                             src={`https://www.youtube.com/embed/${el}`}
                             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen

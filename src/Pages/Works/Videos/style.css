@@ -7,14 +7,22 @@
     .imgContainer{
         margin-bottom: 1rem;
     }
+    .videoContainer{
+        display: flex;
+        width: 95vw;
+        justify-content: center; 
+        align-items: center; 
+        iframe{
+            border: 0;              
+            width: 100%;
+            height: 40rem;
+        }
+    }
     h3{
         text-align: start;
     }
     span{
         max-width: 30rem;
-    }
-    iframe{
-        min-height: 40rem;
     }
     hr{
         color: aliceblue;
@@ -73,6 +81,17 @@
         }
         .aboutImg{
             object-fit: contain;
+        }
+        .videoContainer{
+            display: flex;
+            width: 95vw;
+            height: 20rem;
+            overflow: hidden;
+            iframe{
+                width: 22rem;
+                height: 20rem;
+                flex-shrink: 0;
+            }
         }
         .imgContainer{
             width: 20rem;
