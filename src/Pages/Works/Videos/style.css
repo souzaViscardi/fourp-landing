@@ -25,7 +25,8 @@
     span{
         max-width: 40rem;
         font-size: 1.5rem;
-        font-weight: 1 !important;
+        font-weight: 600  !important;
+
     }
     hr{
         color: aliceblue;
@@ -125,7 +126,8 @@
         #fullTable{
             padding: 0;
             span {
-                max-width: 15rem;
+                max-width: 42rem;
+                text-align: center;
             }
         }
    
@@ -184,7 +186,8 @@
         #fullTable{
             padding: 0;
             span {
-                max-width: 40rem;
+                max-width: 42rem;
+                text-align: center;            
             }
         }
    
