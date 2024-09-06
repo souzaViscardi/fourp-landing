@@ -20,9 +20,12 @@
     }
     h3{
         text-align: start;
+        font-size: 1.5rem;
     }
     span{
-        max-width: 30rem;
+        max-width: 40rem;
+        font-size: 1.5rem;
+        font-weight: 1 !important;
     }
     hr{
         color: aliceblue;
@@ -82,6 +85,9 @@
         .aboutImg{
             object-fit: contain;
         }
+        h3{
+            text-align: center;
+        }
         .videoContainer{
             display: flex;
             width: 95vw;
@@ -102,7 +108,6 @@
             font-size: .8rem;
             margin-bottom: 1rem;
             margin-top: 1rem;
-
         }
         .bloco >h2 {
             text-align: center;
@@ -111,14 +116,16 @@
             margin-top: 2.5rem;
         }
         .bloco >div{
-
+            flex-direction: column;
             >span{
-                font-size: .5rem
+                font-size: 1rem
             }
         }
+
         #fullTable{
+            padding: 0;
             span {
-                max-width: 10rem;
+                max-width: 15rem;
             }
         }
    
@@ -127,19 +134,59 @@
 
   @media (min-width: 600px) and (max-width: 900px) {
     #Videos{
+        .container{
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
         .aboutImg{
             object-fit: contain;
         }
-        .margin-top{
-            flex-direction: column;
-            .bloco{
-                width: 95vw;
-                align-items: center;
-                min-height: 7rem;            
-            }
-            .bloco > span {
-                text-align: center;
+        h3{
+            text-align: center;
+        }
+        .bloco{
+            width: 95vw;
+        }
+        .videoContainer{
+            display: flex;
+            width: 95vw;
+            height: 20rem;
+            overflow: hidden;
+            iframe{
+                width: 40rem;
+                height: 20rem;
+                flex-shrink: 0;
             }
         }
+        .imgContainer{
+            width: 100%;
+            height: 8rem !important;
+        }
+        .bloco > span {
+            text-align: center;
+            font-size: .8rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        .bloco >h2 {
+            text-align: center;
+        }
+        .margin-top{
+            margin-top: 2.5rem;
+        }
+        .bloco >div{
+            flex-direction: column;
+            >span{
+                font-size: 1rem
+            }
+        }
+
+        #fullTable{
+            padding: 0;
+            span {
+                max-width: 40rem;
+            }
+        }
+   
     }
   }

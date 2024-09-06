@@ -36,6 +36,10 @@
     }
   }
   @media (min-width: 600px) and (max-width: 900px) {
+    .bloco{
+      min-height: 8rem;
+
+    }
     h1 {
       font-size: 3em;
       line-height: 1.1;
