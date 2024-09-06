@@ -13,10 +13,14 @@
     span{
         max-width: 30rem;
     }
+    iframe{
+        min-height: 40rem;
+    }
     hr{
         color: aliceblue;
         width: 100%;
     }
+
     .bloco >div{
         display: flex;
         justify-content: space-between;

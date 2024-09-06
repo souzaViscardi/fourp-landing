@@ -1,15 +1,24 @@
 import {pages} from "../../../data/index"
-import { useParams } from 'react-router-dom';
 import {Container,Bloc} from "../../../Components/Layout"
-import { ScrollRestoration } from "react-router-dom";
+import { ScrollRestoration,useParams } from "react-router-dom";
 import { Page } from "../../../data/Interfaces";
-
+import { useEffect } from "react";
 import "./style.css"
-
 export function Videos(){
     const {id} = useParams()
     const page = pages.find((el:Page) => el.id==id) || pages[0]
     console.log(page)
+    useEffect(() => {
+        const videos = document.querySelectorAll('video');
+
+        videos.forEach(video =>{ 
+            console.log(video)
+            video.addEventListener('mouseenter', () => { video.play() })
+            video.addEventListener('mouseleave', () => { video.pause() })
+    
+        })
+    })
+
     return(
         <div className="full-container" id="Videos">
             <ScrollRestoration />
@@ -34,7 +43,7 @@ export function Videos(){
                 </Bloc>  
             </Container>
             <Container classe="imgContainer">
-            <video className="aboutImg" autoPlay src={page.videos[0]} loop={true} muted={true}></video>            
+            <video className="aboutImg" src={page.videos[0]} loop={true} muted={true}></video>            
             </Container>
             <Container>
                 <Bloc id="fullTable">
@@ -45,7 +54,7 @@ export function Videos(){
                 </Bloc>  
             </Container>
             <Container classe="imgContainer">
-            <video className="aboutImg" autoPlay src={page.videos[1]} loop={true} muted={true}></video>            
+            <video className="aboutImg" src={page.videos[1]} loop={true} muted={true}></video>            
             </Container>
             <Container>
                 <Bloc id="fullTable">
@@ -56,7 +65,7 @@ export function Videos(){
                 </Bloc>  
             </Container>
             <Container classe="imgContainer">
-            <video className="aboutImg" autoPlay src={page.videos[2]} loop={true} muted={true}></video>            
+            <video className="aboutImg" src={page.videos[2]} loop={true} muted={true}></video>            
             </Container>
             <Container>
                 <Bloc id="fullTable">
@@ -67,12 +76,16 @@ export function Videos(){
                 </Bloc>  
             </Container>
             
-
-            <br></br>
             {
                 page.bottomvideos.map((el, index) => (
                 <Container key={index} classe="imgContainer">
-                        <video key={index} className="aboutImg" autoPlay src={el} loop={true} muted={true}></video>            
+                    <iframe
+                            className="aboutImg"
+                            src={`https://www.youtube.com/embed/${el}`}
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title="Embedded youtube"
+                            />                
                 </Container>
                 ))
             }
