@@ -172,7 +172,7 @@ export const pages = [
         elementoIcones: "Elementos e ícones na tela ajudam a destacar pontos-chave e facilitar a compreensão. Ícones, animações e gráficos guiam o olhar do espectador, tornando o conteúdo mais intuitivo. Legendas e texto em tela reforçam mensagens e garantem clareza.",
         coberturaIlustracao:"Vídeos de cobertura, ou B-rolls, enriquecem o conteúdo principal ao mostrar em vez de apenas contar. Eles oferecem variação visual, quebram a monotonia e mantêm o público engajado. B-rolls permitem cortes suaves e transições naturais, aprimorando a narrativa.",
         ritmoCores:"O ritmo dos cortes é crucial para a fluidez e o engajamento do vídeo. Cortes rápidos e alternância de ângulos criam dinamismo, mantendo o espectador atento. A sincronia com música e efeitos sonoros intensifica a experiência audiovisual e torna as explicações mais impactantes.",
-        videos:["/work-video-fernando1.webm", "/work-video-fernando2.webm", "/work-video-fernando3.webm"],
+        videos:["/work-video-fernando1.mp4", "/work-video-fernando2.webm", "/work-video-fernando3.webm"],
         bottomvideos:["iMlggP3eoJw"],
         bottomImgs:[""]
 
