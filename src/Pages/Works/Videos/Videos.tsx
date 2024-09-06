@@ -2,22 +2,12 @@ import {pages} from "../../../data/index"
 import {Container,Bloc} from "../../../Components/Layout"
 import { ScrollRestoration,useParams } from "react-router-dom";
 import { Page } from "../../../data/Interfaces";
-import { useEffect } from "react";
 import "./style.css"
 export function Videos(){
     const {id} = useParams()
     const page = pages.find((el:Page) => el.id==id) || pages[0]
     console.log(page)
-    useEffect(() => {
-        const videos = document.querySelectorAll('video');
 
-        videos.forEach(video =>{ 
-            console.log(video)
-            video.addEventListener('mouseenter', () => { video.play() })
-            video.addEventListener('mouseleave', () => { video.pause() })
-    
-        })
-    })
 
     return(
         <div className="full-container" id="Videos">
@@ -43,7 +33,7 @@ export function Videos(){
                 </Bloc>  
             </Container>
             <Container classe="imgContainer">
-            <video className="aboutImg" src={page.videos[0]} loop={true} muted={true}></video>            
+            <video autoPlay className="aboutImg" src={page.videos[0]} loop={true} muted={true}></video>            
             </Container>
             <Container>
                 <Bloc id="fullTable">
@@ -54,7 +44,7 @@ export function Videos(){
                 </Bloc>  
             </Container>
             <Container classe="imgContainer">
-            <video className="aboutImg" src={page.videos[1]} loop={true} muted={true}></video>            
+            <video autoPlay className="aboutImg" src={page.videos[1]} loop={true} muted={true}></video>            
             </Container>
             <Container>
                 <Bloc id="fullTable">
@@ -65,7 +55,7 @@ export function Videos(){
                 </Bloc>  
             </Container>
             <Container classe="imgContainer">
-            <video className="aboutImg" src={page.videos[2]} loop={true} muted={true}></video>            
+            <video autoPlay className="aboutImg" src={page.videos[2]} loop={true} muted={true}></video>            
             </Container>
             <Container>
                 <Bloc id="fullTable">
