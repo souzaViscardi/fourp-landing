@@ -1,7 +1,7 @@
 import Home from "../Pages/Home/Home.tsx"
 import ErrorPage from "../Pages/Error.tsx"
 import { Brands } from "../Pages/Works/Brands/Brands.tsx";
-
+import { Videos } from "../Pages/Works/Videos/Videos.tsx";
 import {
   createBrowserRouter,
 } from "react-router-dom";
@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/trabalhos/videos/:id",
-    element: <ErrorPage />,
+    element: <Videos />,
     errorElement: <ErrorPage />,
   },
   {

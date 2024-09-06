@@ -1,22 +1,19 @@
-export interface trabalhosInterface {
-    name: string;
-    type: string;
-    imgCard: string;
-    url: string;
-}[]
+
 export const trabalhos=[
     {
         name: "REGENVET SYSTEM",
         type: "IDENTIDADE VISUAL",
         imgCard: "/work-regenvet.png",
-        id:"marcas/regenvet",
+        path:"marcas/regenvet",
+        id:"regenvet",
         date: "2024"
     },
     {
         name: "DRA. IZABELLA BATISTA",
         type: "ENSAIO FOTOGRAFICO",
         imgCard: "/work-2.png",
-        id:"fotos/izabelabatista",
+        path:"fotos/izabelabatista",
+        id:"izabelabatista",
         date: "2024"
 
 
@@ -25,7 +22,8 @@ export const trabalhos=[
         name: "FERNANDO BELOTTO",
         type: "IDENTIDADE VISUAL",
         imgCard: "/work-3.png",
-        id:"marcas/belotto",
+        path:"marcas/belotto",
+        id:"belotto",
         date: "2024"
 
     },
@@ -33,7 +31,8 @@ export const trabalhos=[
         name: "FERNANDO BELOTTO",
         type: "EDIÇÃO DE VÍDEO",
         imgCard: "/work-4.png",
-        id:"videos/belottovideos",
+        path:"videos/belottovideos",
+        id:"belottovideos",
         date: "2024"
 
     },
@@ -142,7 +141,9 @@ export const pages = [
         conceito:"As formas fluidas transmite a ideia de inovação e cuidado, refletindo a expertise da Regenvet na produção de implantes e instrumentais veterinários de alta qualidade.",
         conceptImg: "/work-miv-regenvet-2.png",
         idealizacao: "Proporcionar aos médicos veterinários visualmente a conexão entre tecnologia e cuidados de saúde animal, mostrando através do posicionamento da marca a confiança e segurança que ela entrega.",
-        bottomImgs:["/work-miv-regenvet-3.png", "/work-miv-regenvet-4.png"]
+        bottomImgs:["/work-miv-regenvet-3.png", "/work-miv-regenvet-4.png"],
+        videos:[""],
+        bottomvideos:[""]
     },
     {
         id:"belotto",
@@ -157,6 +158,23 @@ export const pages = [
         conceito:"A escolha de destacar o sobrenome Belotto busca não apenas enfatizar a identidade pessoal, mas também ressoar com a marca de forma memorável. A combinação do sobrenome com o ícone do gato cria uma sinergia que evoca uma imagem de modernidade e inovação.",
         conceptImg: "/work-miv-fernandobelotto-2.jpg",
         idealizacao: "A proposta foi criar um resultado que seja marcante e que crie conexão com os inscritos, seguidores e alunos do Fernando Belotto, com uma marca que tenha uma boa presença e esteja bem adaptada ao mundo de tecnologia.",
-        bottomImgs:["/work-miv-fernandobelotto-3.jpg", "/work-miv-fernandobelotto-4.jpg"]
+        bottomImgs:["/work-miv-fernandobelotto-3.jpg", "/work-miv-fernandobelotto-4.jpg"],
+        videos:[""],
+        bottomvideos:[""]
+    },
+    {
+        id:"belottovideos",
+        cliente: "FERNANDO BELOTTO",
+        ano:"2024",
+        categoria:"EDIÇÃO DE VÍDEO",
+        nome: "FERNANDO BELOTTO",
+        description: "Fernando projetou seu canal no YouTube para atingir um público voltado para comunidade DEV, portando uma edição dinamica e intuitiva foi necessária para conquistar seus futuros inscritos e alunos.",
+        elementoIcones: "Elementos e ícones na tela ajudam a destacar pontos-chave e facilitar a compreensão. Ícones, animações e gráficos guiam o olhar do espectador, tornando o conteúdo mais intuitivo. Legendas e texto em tela reforçam mensagens e garantem clareza.",
+        coberturaIlustracao:"Vídeos de cobertura, ou B-rolls, enriquecem o conteúdo principal ao mostrar em vez de apenas contar. Eles oferecem variação visual, quebram a monotonia e mantêm o público engajado. B-rolls permitem cortes suaves e transições naturais, aprimorando a narrativa.",
+        ritmoCores:"O ritmo dos cortes é crucial para a fluidez e o engajamento do vídeo. Cortes rápidos e alternância de ângulos criam dinamismo, mantendo o espectador atento. A sincronia com música e efeitos sonoros intensifica a experiência audiovisual e torna as explicações mais impactantes.",
+        videos:["/work-video-fernando1.webm", "/work-video-fernando2.webm", "/work-video-fernando3.webm"],
+        bottomvideos:["blob:https://www.youtube.com/937fc4f9-d129-47a4-9ba8-d7bc0d618a34"],
+        bottomImgs:[""]
+
     },
 ]

@@ -2,23 +2,10 @@ import {pages} from "../../../data/index"
 import { useParams } from 'react-router-dom';
 import {Container,Bloc} from "../../../Components/Layout"
 import { ScrollRestoration } from "react-router-dom";
+import { Page } from "../../../data/Interfaces";
 
 import "./style.css"
-interface Page{
-    id:string
-    cliente: string
-    ano:string
-    categoria:string
-    nome: string
-    description: string
-    finalProduct:string
-    design: string
-    cores:string
-    conceptImg: string
-    idealizacao: string
-    bottomImgs:string[]
 
-}
 export function Brands(){
     const {id} = useParams()
     const page = pages.find((el:Page) => el.id==id) || pages[0]

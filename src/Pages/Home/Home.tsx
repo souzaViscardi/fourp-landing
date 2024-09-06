@@ -39,7 +39,7 @@ export default function Home(){
             <Mosaic>
                 {trabalhos.map((el:any, index:number) => (
                     <Bloc key={index}>
-                        <Card name={el.name} key={index} img={el.imgCard} url={"/trabalhos/"+el.id} date={el.date} type={el.type}/>
+                        <Card name={el.name} key={index} img={el.imgCard} url={"/trabalhos/"+el.path} date={el.date} type={el.type}/>
                     </Bloc>
                 ))}
 
