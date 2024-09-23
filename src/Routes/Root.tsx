@@ -5,6 +5,7 @@ import { Videos } from "../Pages/Works/Videos/Videos.tsx";
 import Works from "../Pages/Works/Works.tsx";
 import { Photos } from "../Pages/Works/Photos/Photos.tsx";
 import { Social } from "../Pages/Portfolio/Social/Social.tsx";
+import { Videos as PortfolioVideos } from "../Pages/Portfolio/Videos/Videos.tsx";
 import {
   createBrowserRouter,
 } from "react-router-dom";
@@ -37,6 +38,11 @@ export const router = createBrowserRouter([
   {
     path: "/portfolio/social",
     element: <Social />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/portfolio/videos",
+    element: <PortfolioVideos />,
     errorElement: <ErrorPage />,
   },
   {

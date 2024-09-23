@@ -245,4 +245,10 @@ export const portfolio = [
         subtitulo: "INSTAGRAM",
         imgs:["/portfolio-post-1.png","/portfolio-post-2.png","/portfolio-post-3.png","/portfolio-post-4.png","/portfolio-post-5.png","/portfolio-post-6.png","/portfolio-post-7.png","/portfolio-post-8.png","/portfolio-post-9.png","/portfolio-post-10.png"],
     },
+    {
+        id:"videos",
+        titulo: "EDIÇÃO DE VÍDEO",
+        subtitulo: "YOUTUBE E INSTAGRAM",
+        imgs:["iMlggP3eoJw","CxsxH2ReNZY", "WwynySzhWGM", "-hGV75AOanA", "jbB8n7p1yBA", "a_GG3iKYtsk"],
+    },
 ]

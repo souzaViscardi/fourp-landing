@@ -3,8 +3,8 @@ import {Container,Bloc, Mosaic} from "../../../Components/Layout"
 import { ScrollRestoration } from "react-router-dom";
 import { Portfolio } from "../../../data/Interfaces";
 import "./style.css"
-export function Social(){
-    const id = "social"
+export function Videos(){
+    const id = "videos"
     const page = portfolio.find((el:Portfolio) => el.id==id) || portfolio[0]
     let divisor = 3
     let arrImgs = [...page.imgs]
@@ -21,22 +21,28 @@ export function Social(){
         imgs.push(arrImgs)
     console.log(imgs)
     return(
-        <div className="full-container" id="Social">
+        <div className="full-container" id="VideosPortfolio">
             <ScrollRestoration />
-            <Container classe="container margin-top">
+            <Container classe="container">
                 <Bloc>
                     <h1>{page.titulo}</h1>
                     <span>{page.subtitulo}</span>
                 </Bloc>
             </Container>
             <Mosaic>
-                {
-                imgs.map((el:any) => el.map((el2:any, index:number) => (
-                    <Bloc key={index} className={el.length%2===1?"":"bloco-2"}>
-                        <img src={el2}/>
-                    </Bloc>
-                )))
-                }
+            {
+                page.imgs.map((el, index) => (
+                <Bloc key={index} className="videoContainer">
+                    <iframe
+                            src={`https://www.youtube.com/embed/${el}`}
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title="Embedded youtube"
+                            />                
+                </Bloc>
+                ))
+            }
             </Mosaic>
+
         </div>)
 }
