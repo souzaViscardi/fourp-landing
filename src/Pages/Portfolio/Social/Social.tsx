@@ -10,13 +10,13 @@ export function Social(){
     let arrImgs = [...page.imgs]
     let index = 0
     let imgs = []
-    for(const img of arrImgs){
+    arrImgs.forEach(() => {
         let group = arrImgs.splice(index, divisor)
         console.log(arrImgs.length) 
         divisor == 3 ? divisor = 2 : divisor = 3
         imgs.push(group)
         index=divisor-1
-    }
+    })
     if(arrImgs.length>0)
         imgs.push(arrImgs)
     console.log(imgs)
@@ -32,8 +32,8 @@ export function Social(){
             {}
             <Mosaic>
                 {
-                imgs.map((el:any, index:number) => el.map((el2:any, index2:number) => (
-                    <Bloc key={index2} className={index%2===0?"":"bloco-2"}>
+                imgs.map((el:any) => el.map((el2:any, index:number) => (
+                    <Bloc key={index} className={el.length%2===1?"":"bloco-2"}>
                         <img src={el2}/>
                     </Bloc>
                 )))
