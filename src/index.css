@@ -49,9 +49,12 @@ ul{
     text-decoration: none;
   }
 }
+.centralize{
+  text-align: center !important;
+  align-self: center;
+}
 #fullTable{
   width: 95vw;
-  padding: 1rem;
   gap: .5rem
 }
 .medium-img{

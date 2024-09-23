@@ -102,6 +102,9 @@ img {
     .logo{
         width: 5rem !important;
     }
+    .centralize{
+        max-width: 100% !important;
+    }
     .description{
         height: 15rem;
         overflow: scroll;

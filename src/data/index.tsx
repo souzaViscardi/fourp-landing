@@ -37,6 +37,44 @@ export const trabalhos=[
 
     },
 ]
+export const outrosTrabalhos=[
+    {
+        name: "SOCIAL MEDIA",
+        type: "INSTAGRAM",
+        imgCard: "/work-5.jpg",
+        path:"/portfolio/social",
+        id:"social",
+        date: ""
+    },
+    {
+        name: "EDIÇÃO DE VÍDEO",
+        type: "YOUTUBE/INSTAGRAM",
+        imgCard: "/work-6.jpg",
+        path:"/portfolio/videos",
+        id:"videos",
+        date: ""
+
+
+    },
+    {
+        name: "THUMBNAILS",
+        type: "YOUTUBE",
+        imgCard: "/work-7.jpg",
+        path:"/portfolio/thumbs",
+        id:"thumbs",
+        date: ""
+
+    },
+    {
+        name: "FOTOGRAFIAS",
+        type: "ENSAIOS FOTOGRÁFICOS",
+        imgCard: "/work-8.jpg",
+        path:"/portfolio/fotografias",
+        id:"fotografias",
+        date: ""
+
+    },
+]
 
 export const services = [
     {
@@ -73,7 +111,7 @@ export const testimonial = [
         role:"DJ e Produtor"
     },
     {
-        name:"ALINE AUDRIVET",
+        name:"ALINE APARECIDA",
         description:"Estou encantada com o resultado! A criação do logo e da identidade visual da nossa empresa ficou espetacular. O design é moderno, elegante e exatamente como eu imaginava. Cada detalhe foi cuidadosamente pensado e o resultado final superou todas as minhas expectativas. O trabalho ficou incrivelmente bonito e trouxe uma nova vida à nossa marca. Estou extremamente satisfeita e muito feliz com o resultado. Recomendo fortemente para quem busca qualidade e excelência em design!",
         img:"/testimonial-aline.png",
         role:"Empresária"
@@ -143,7 +181,9 @@ export const pages = [
         idealizacao: "Proporcionar aos médicos veterinários visualmente a conexão entre tecnologia e cuidados de saúde animal, mostrando através do posicionamento da marca a confiança e segurança que ela entrega.",
         bottomImgs:["/work-miv-regenvet-3.png", "/work-miv-regenvet-4.png"],
         videos:[""],
-        bottomvideos:[""]
+        bottomvideos:[""],
+        imgs:[""]
+
     },
     {
         id:"belotto",
@@ -160,7 +200,9 @@ export const pages = [
         idealizacao: "A proposta foi criar um resultado que seja marcante e que crie conexão com os inscritos, seguidores e alunos do Fernando Belotto, com uma marca que tenha uma boa presença e esteja bem adaptada ao mundo de tecnologia.",
         bottomImgs:["/work-miv-fernandobelotto-3.jpg", "/work-miv-fernandobelotto-4.jpg"],
         videos:[""],
-        bottomvideos:[""]
+        bottomvideos:[""],
+        imgs:[""]
+
     },
     {
         id:"belottovideos",
@@ -174,7 +216,33 @@ export const pages = [
         ritmoCores:"O ritmo dos cortes é crucial para a fluidez e o engajamento do vídeo. Cortes rápidos e alternância de ângulos criam dinamismo, mantendo o espectador atento. A sincronia com música e efeitos sonoros intensifica a experiência audiovisual e torna as explicações mais impactantes.",
         videos:["/work-video-fernando1.mp4", "/work-video-fernando2.mp4", "/work-video-fernando3.mp4"],
         bottomvideos:["iMlggP3eoJw"],
-        bottomImgs:[""]
+        bottomImgs:[""],
+        imgs:[""]
 
+
+    },
+    {
+        id:"izabelabatista",
+        cliente: "DRA. IZABELLA BATISTA",
+        ano:"2024",
+        categoria:"ENSAIO FOTOGRAFICO",
+        nome: "DRA. IZABELLA BATISTA",
+        description: "Apresentamos um ensaio fotográfico profissional da Dra. Izabella Batista, uma nutricionista dedicada a consultas humanizadas. Este projeto fotográfico marca o início de sua carreira com grande estilo e diferencial, destacando-se da concorrência.",
+        videos:[""],
+        finalProduct:"/work-2.png",
+        bottomvideos:[""],
+        bottomImgs:["/work-foto-iza-5.png","/work-foto-iza-6.png","/work-foto-iza-7.png","/work-foto-iza-8.png"],
+        imgs:["/work-foto-iza-1.png","/work-foto-iza-2.jpg","/work-foto-iza-3.png","/work-foto-iza-4.png"],
+        conceito:"As fotos foram cuidadosamente planejadas para transmitir não apenas a competência, mas também a sua abordagem acolhedora e empática com os pacientes. Cada imagem captura a essência de sua prática, evidenciando a tranquilidade e a leveza que são características essenciais do seu atendimento.",
+        idealizacao: "Através dessas imagens, buscamos refletir a confiança e a segurança que a Dra. transmite em suas consultas, proporcionando uma visão clara do ambiente sereno e positivo que ela cria para seus pacientes. Este ensaio fotográfico não apenas representa o início de uma jornada promissora, mas também estabelece um novo padrão de qualidade e humanidade no atendimento nutricional.",
+    },
+]
+
+export const portfolio = [
+    {
+        id:"social",
+        titulo: "SOCIAL MEDIA",
+        subtitulo: "INSTAGRAM",
+        imgs:["/portfolio-post-1.png","/portfolio-post-2.png","/portfolio-post-3.png","/portfolio-post-4.png","/portfolio-post-5.png","/portfolio-post-6.png","/portfolio-post-7.png","/portfolio-post-8.png","/portfolio-post-9.png","/portfolio-post-10.png"],
     },
 ]

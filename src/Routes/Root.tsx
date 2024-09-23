@@ -2,6 +2,9 @@ import Home from "../Pages/Home/Home.tsx"
 import ErrorPage from "../Pages/Error.tsx"
 import { Brands } from "../Pages/Works/Brands/Brands.tsx";
 import { Videos } from "../Pages/Works/Videos/Videos.tsx";
+import Works from "../Pages/Works/Works.tsx";
+import { Photos } from "../Pages/Works/Photos/Photos.tsx";
+import { Social } from "../Pages/Portfolio/Social/Social.tsx";
 import {
   createBrowserRouter,
 } from "react-router-dom";
@@ -9,6 +12,11 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/trabalhos",
+    element: <Works/>,
     errorElement: <ErrorPage />,
   },
   {
@@ -23,7 +31,12 @@ export const router = createBrowserRouter([
   },
   {
     path: "/trabalhos/fotos/:id",
-    element: <ErrorPage />,
+    element: <Photos />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/portfolio/social",
+    element: <Social />,
     errorElement: <ErrorPage />,
   },
   {

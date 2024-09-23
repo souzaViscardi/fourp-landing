@@ -16,6 +16,14 @@ export interface Page{
     ritmoCores?:string
     videos:string[]
     bottomvideos:string[]
+    imgs:string[]
+
+}
+export interface Portfolio{
+    id:string
+    titulo: string
+    subtitulo:string
+    imgs:string[]
 
 }
 export interface trabalhosInterface {

@@ -3,8 +3,9 @@
     gap: 10px;
     animation-direction: alternate-reverse;    
     animation-name: slideAnimation;
-    animation-duration: 8s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;    
     align-self: flex-start;
     &:hover {
         animation-play-state: paused;
@@ -41,6 +42,6 @@
     @keyframes slideAnimation {
         0% { transform: translateX(0vw); }
 
-        100% { transform: translateX(-150vw); }
+        100% { transform: translateX(-200vw); }
     }
   }

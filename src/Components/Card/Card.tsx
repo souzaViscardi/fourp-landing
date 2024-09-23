@@ -19,7 +19,7 @@ export default function Card({name, url, type, img, date}:CardProps){
                     <span className="nameLabel">{name}</span>
                     <span className="typeLabel">{type}</span>
                 </div>
-                <div className="yearCard">{date}</div>
+                {date&&<div className="yearCard">{date}</div>}
             </div>
         </div>
         </Link>

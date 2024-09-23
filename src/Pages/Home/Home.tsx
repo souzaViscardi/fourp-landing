@@ -45,7 +45,7 @@ export default function Home(){
 
             </Mosaic>
             <Container>
-                <a className="button dark-theme">OUTROS TRABALHOS</a>
+                <a className="button dark-theme" href="/trabalhos">OUTROS TRABALHOS</a>
             </Container>
             <Container>
                 <h1 className="title">    
@@ -67,7 +67,7 @@ export default function Home(){
                     <h1 className="left"> NOSSOS<br/> SERVIÇOS</h1>
                 </Bloc>
                 <Bloc>
-                    ""
+                    
                 </Bloc>
             </Container>
             <Mosaic>

@@ -14,7 +14,7 @@ export function Brands(){
         <div className="full-container" id="Brands">
             <ScrollRestoration />
             <Container classe="container margin-top">
-                <Bloc id="fullTable">
+                <Bloc >
                     <h2>{page.nome}</h2>
                     <span>{page.description}</span>
                 </Bloc>
