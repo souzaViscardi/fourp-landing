@@ -1,6 +1,6 @@
 #Social{
     .bloco{
-        width: 30vw;
+        width: 31.2vw;
         min-width: 20rem
         
     }
@@ -13,6 +13,6 @@
         object-fit: cover;
     }
     .bloco-2{
-        width: 45.3vw;
+        width: 47.1vw;
     }
 }
