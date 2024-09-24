@@ -4,8 +4,8 @@
    margin-left: 90vw;
 
    img{
-    width: 6rem;
-    height: 6rem;
+    width: 4.5rem;
+    height: 4.5rem;
    }
    img:hover{
     animation: shake 1s;
