@@ -1,6 +1,5 @@
 import {router} from "./Routes/Root"
-import './responsive.css'
-
+import { WhatsAppButton } from "./Components/WhatsAppButton/WhatsAppButton";
 import NavBar from './Components/NavBar/NavBar';
 import {
   RouterProvider,
@@ -10,6 +9,7 @@ function App() {
     <div className="full-container">
       <NavBar/>
       <RouterProvider router={router}/> 
+      <WhatsAppButton/>
     </div>
   )
 }

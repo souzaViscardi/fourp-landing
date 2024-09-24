@@ -251,4 +251,16 @@ export const portfolio = [
         subtitulo: "YOUTUBE E INSTAGRAM",
         imgs:["iMlggP3eoJw","CxsxH2ReNZY", "WwynySzhWGM", "-hGV75AOanA", "jbB8n7p1yBA", "a_GG3iKYtsk"],
     },
+    {
+        id:"thumbs",
+        titulo: "THUMBNAILS",
+        subtitulo: "YOU TUBE",
+        imgs:["/portfolio-thumb-1.jpg","/portfolio-thumb-2.jpg","/portfolio-thumb-3.jpg","/portfolio-thumb-4.jpg","/portfolio-thumb-5.jpg","/portfolio-thumb-6.jpg","/portfolio-thumb-7.jpg","/portfolio-thumb-8.jpg"],
+    },
+    {
+        id:"fotografias",
+        titulo: "ENSAIOS FOTOGRÁFICOS",
+        subtitulo: "",
+        imgs:["/photography-1.jpg","/photography-2.jpg","/photography-7.jpg","/photography-4.jpg","/photography-6.jpg","/photography-5.jpg","/photography-3.jpg"],
+    },
 ]

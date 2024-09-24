@@ -9,6 +9,8 @@ import { Videos as PortfolioVideos } from "../Pages/Portfolio/Videos/Videos.tsx"
 import {
   createBrowserRouter,
 } from "react-router-dom";
+import { Thumbs } from "../Pages/Portfolio/Thumbs/Thumbs.tsx";
+import { Photography } from "../Pages/Portfolio/Fotografias/Photography.tsx";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -43,6 +45,16 @@ export const router = createBrowserRouter([
   {
     path: "/portfolio/videos",
     element: <PortfolioVideos />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/portfolio/thumbs",
+    element: <Thumbs />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/portfolio/fotografias",
+    element: <Photography />,
     errorElement: <ErrorPage />,
   },
   {
