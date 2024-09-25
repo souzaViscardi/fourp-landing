@@ -76,7 +76,7 @@ export default function Contact() {
                                 <input onChange={handleChangeEmail} type="email" name="email" id="email" placeholder="E-mail"/>
                                 <textarea name="message" id="message" placeholder="Mensagem"></textarea>
                                 <button disabled={error} className="theme-btn2">ENVIAR</button>
-                            {result&&<p className={error?"invalid":""} id="result">{result}</p>}
+                            {<p className={error?"invalid":""} id="result">{result}</p>}
                             
                         </form>
                 </Bloc>
