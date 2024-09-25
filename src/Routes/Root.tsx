@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import { Thumbs } from "../Pages/Portfolio/Thumbs/Thumbs.tsx";
 import { Photography } from "../Pages/Portfolio/Fotografias/Photography.tsx";
+import Contact from "../Pages/Contact/Contact.tsx";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -59,7 +60,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/contato",
-    element: <ErrorPage />,
+    element: <Contact />,
     errorElement: <ErrorPage />,
   },
 ]);

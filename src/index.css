@@ -67,7 +67,7 @@ ul{
 :root{
   --fourp: #ff632d;
   --fourp2: #c400ff;
-  
+  --cor-transparent: rgba(255, 255, 255, 0.1);
 }
 html {
   scroll-behavior: auto;
