@@ -36,6 +36,7 @@ export default function Contact() {
         const json = JSON.stringify(object);
     
         setResult("Please wait...");    
+        setError(true)
         fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: {
@@ -56,6 +57,7 @@ export default function Contact() {
             })
             .then(function () {
                 form.reset();
+                setError(false)
                 setTimeout(() => {
                     setResult("");
                 }, 5000);
