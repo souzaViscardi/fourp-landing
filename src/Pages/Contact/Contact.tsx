@@ -72,8 +72,6 @@ export default function Contact() {
                     <span>Estamos ansiosos pela sua mensagem! envie agora mesmo e retornaremos o contato.</span>
                         <form id="ajax-form" onSubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="99b62a62-32c4-4582-8894-d3b74cf77604"/>
-                            {/* <input type="checkbox" name="botcheck" id="botcheck" style="display: none;"> */}
-
                                 <input  type="text" name="name" id="name" placeholder="Nome"/>
                                 <input onChange={handleChangeEmail} type="email" name="email" id="email" placeholder="E-mail"/>
                                 <textarea name="message" id="message" placeholder="Mensagem"></textarea>

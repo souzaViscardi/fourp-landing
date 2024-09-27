@@ -87,14 +87,30 @@ html {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: inherit;
   text-decoration: inherit;
 }
 
+a:visited {
+  color: inherit;
+}
 a:hover {
-  color: #535bf2;
+  cursor: pointer;
+}
+a::after {
+  content: '';
+  display: flex;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.4s ease-in-out;
 }
 
+a:hover::after {
+  
+  width: 100%;
+}
+  
 body {
   margin: 0;
   display: flex;
@@ -105,13 +121,14 @@ body {
 h1 {
   font-size: 5em;
   line-height: 1.1;
+  margin: 0;
 }
 h2 {
   font-size: 3em;
 }
 h3 {
   font-size: 1.2em;
-  font-weight: 1!important;
+  font-weight: 1;
 }
 button {
   border-radius: 8px;
@@ -139,22 +156,39 @@ button:focus-visible {
 .button{
   font-size: 18px;
   color: #ffffff;
-  background: var(--dark);
-  display: inline-flex;
+  background: black;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   border-radius: 0px;
-  /* border-radius: 40px; */
   text-transform: uppercase;
-  position: relative;
   font-weight: 700;
-  line-height: 20px;
-  padding: 12px 19px;
-  overflow: hidden;
-  z-index: 1;
-  border: 2px solid var(--dark);
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
+  line-height: 20px; 
+  a{
+    z-index: 2;
+  }
 }
+.fundo {
+display: flex;  
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: #ffffff;
+  transform: translateY(-100%); 
+  transition: transform 0.3s ease;
+}
+.button:hover .fundo {
+  transform: translateY(0); 
+}
+/* 
+.button:hover {
+  color: black;
+} */
+ .icon{
+   width: 1.2rem; 
+   filter: invert(100%);
+    margin-left: 5px;
+ }
 .bloco > h2{
   align-content: end;
   margin-left: 1rem;
@@ -188,8 +222,11 @@ button:focus-visible {
     li{
       font-size: 1rem;
     }
+    .icon{
+      width: .5rem !important;
+  }
     .title{
-      font-size: 3rem !important;
+      font-size: 3rem 
     }
     h1{
       font-size: 1.5rem;

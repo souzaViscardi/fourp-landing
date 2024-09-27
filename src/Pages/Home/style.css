@@ -38,6 +38,14 @@ h1.title {
 #slogan{
     margin-top: 5rem;
 }
+.button-container{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+      
+}
 .scaleDown{
     translate: none; 
     rotate: none; 
@@ -141,6 +149,11 @@ img {
     .title span{
         font-size: 5rem;
     }
+    h1.title {
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+    
     .logo{
         width: 8rem;
     }

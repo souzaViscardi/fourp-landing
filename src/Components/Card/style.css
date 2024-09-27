@@ -1,11 +1,17 @@
-.card{
+.card {
     display: flex;
     width: 47.1vw;
     flex-direction: column;
     font-weight: 600;
     margin-bottom: 1rem;
+
+    a:hover::after {
+
+        width: 0;
+    }
 }
-.card img{
+
+.card img {
     flex-shrink: 0;
     overflow: hidden;
     object-fit: cover;
@@ -13,14 +19,16 @@
     width: 100%;
 
 }
-.img-box{
+
+.img-box {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     height: 20rem;
 }
-.text-box{
+
+.text-box {
     display: flex;
     justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, 0.258);
@@ -29,76 +37,86 @@
     min-height: 5rem;
 
 }
-.text-box p{
+
+.text-box p {
     padding-left: 2rem;
 }
-.yearCard{
+
+.yearCard {
     align-self: center;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
     margin: 2rem;
     padding: .3rem;
-    border: 1px solid  rgba(255, 255, 255, 0.258);
+    border: 1px solid rgba(255, 255, 255, 0.258);
     width: 5rem;
 
 }
-.text-group{
+
+.text-group {
     display: flex;
     flex-direction: column;
     height: 2rem;
     padding-left: 1rem;
     padding-top: 1.5rem;
 }
-.nameLabel{
+
+.nameLabel {
     color: aliceblue !important;
 }
-.typeLabel{
+
+.typeLabel {
     font-size: .8rem !important;
 }
-.img-card:hover{
-    translate: none; 
-    rotate: none; 
-    scale: none; 
+
+.img-card:hover {
+    translate: none;
+    rotate: none;
+    scale: none;
     animation-name: img-anim;
     animation-duration: 2s;
     overflow: hidden
 }
+
 @keyframes img-anim {
     from {
-      transform: scale(1) translateX(0);
+        transform: scale(1) translateX(0);
     }
-    to {
-      transform: scale(1.5)
-    }
-  }
 
-  @media (max-width: 520px) {
+    to {
+        transform: scale(1.5)
+    }
+}
+
+@media (max-width: 520px) {
     .card {
 
         width: 20rem !important;
         height: 15rem;
         margin: auto;
         margin-bottom: 1rem;
-    
-      }
-  
-  }
-  @media (min-width: 600px) and (max-width: 900px) {
+
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
     .card {
 
         width: 95vw;
         height: 20rem;
         margin: auto;
         margin-bottom: 1rem;
-    
-      }
-  
-  }
-  @media(hover: hover) {
-    .img-card:hover{
-        translate: none; 
-        rotate: none; 
-        scale: none; 
+
+    }
+
+}
+
+@media(hover: hover) {
+    .img-card:hover {
+        translate: none;
+        rotate: none;
+        scale: none;
         animation-name: img-anim;
         animation-duration: 2s;
         animation-iteration-count: infinite;

@@ -9,8 +9,9 @@ interface CardProps {
 }
 export default function Card({name, url, type, img, date}:CardProps){
     return(
-        <Link to={url}>
         <div className="card">
+            <Link to={url}>
+
             <div className="img-box">
                 <img className="img-card" src={img} alt={name}/>
             </div>
@@ -21,7 +22,7 @@ export default function Card({name, url, type, img, date}:CardProps){
                 </div>
                 {date&&<div className="yearCard">{date}</div>}
             </div>
+            </Link>
         </div>
-        </Link>
     )
 }

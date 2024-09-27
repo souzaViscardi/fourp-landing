@@ -9,11 +9,32 @@
         justify-content: center;
     }
     .bloco{
-        min-height: 0;
+        min-height: 12rem;
+        justify-content: center;
+    }
+    .bloco > span{
+        max-width: 45vw;
     }
     .aboutImg{
         height: 30rem;
         object-fit: cover;
+    }
+    .ajuste{
+        display: flex;
+        justify-content: space-between;
+    }
+    h2{
+        margin: 0;
+        text-align: left;
+    }
+    .ajuste > h3{
+        color:rgb(123, 105, 105)
+    }
+    .ajuste > span{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
     }
 }
 
@@ -26,6 +47,7 @@
         }
         .bloco{
             align-items: center;
+        
         }
         .container{
             flex-direction: column;

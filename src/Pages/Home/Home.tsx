@@ -44,7 +44,7 @@ export default function Home(){
                 ))}
 
             </Mosaic>
-            <Container>
+            <Container classe="button-container">
                 <a className="button dark-theme" href="/trabalhos">OUTROS TRABALHOS</a>
             </Container>
             <Container>
@@ -118,7 +118,7 @@ export default function Home(){
             <h1 >VAMOS TRABALHAR<br/>JUNTOS?</h1>
             </Container>
             <Container>
-                <a className="button dark-theme">ENVIAR MENSSAGEM</a>
+                <a className="button dark-theme" href="/contato">ENVIAR MENSSAGEM</a>
             </Container>
             <Container classe="imgContainer">
                 <img className="aboutImg" src="/about-4.jpg" alt="about"/>
@@ -128,7 +128,7 @@ export default function Home(){
             </Container>
             <Container>
                 <ul>
-                    <li><Link target="_blank"  to="https://www.instagram.com/studiofourp/">INSTAGRAM</Link><img src="/instagram.png" /></li>
+                    <li><Link target="_blank"  to="https://www.instagram.com/studiofourp/">INSTAGRAM</Link><img className="icon" src="/instagram.png" /></li>
                     <li><Link target="_blank"  to="https://www.tiktok.com/@studio.fourp">TIKTOK</Link><img src="/tiktok.png" /></li>
                     <li><Link target="_blank"  to="https://www.linkedin.com/company/studiofourp">LINKEDIN</Link><img src="/linkedin.png" /></li>
                 </ul>

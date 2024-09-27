@@ -18,15 +18,15 @@ export function Photos(){
                     <span>{page.description}</span>
                 </Bloc>
                 <Bloc className="full">
-                    <div className="border-bottom">
+                    <div className="border-bottom ajuste">
                         <h3><b>CLIENTE</b></h3>
                         <span>{page.cliente}</span>
                     </div>
-                    <div className="border-bottom">
+                    <div className="border-bottom ajuste">
                         <h3><b>ANO</b></h3>
                         <span>{page.ano}</span>
                     </div>
-                    <div>
+                    <div className="ajuste">
                         <h3><b>CATEGORIA</b></h3>
                         <span>{page.categoria}</span>
                     </div>
