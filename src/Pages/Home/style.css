@@ -143,9 +143,15 @@ img {
     #mosaic{
         width: 100%;
     }
+    .button-container{
+        margin-top: 10rem;
+    }
   }
 
   @media (min-width: 600px) and (max-width: 900px) {
+    .button-container{
+        margin-top: 10rem;
+    }
     .title span{
         font-size: 5rem;
     }
